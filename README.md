@@ -18,5 +18,4 @@ Interactive data analytics dashboard for women's safety
 - Google Maps API, Mapbox
 - Govt. crime datasets
 
-## 🚀 How to Run the Project
-1. Clone the repo:
+
