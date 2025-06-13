@@ -1,0 +1,166 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f4598;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #048768;
+    color: #333;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #4a4a6a;
+    font-size: 2rem;
+    margin: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sos-card {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #ff6b6b;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sos-icon {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sos-content h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.sos-active {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.map-card {
+    grid-column: span 3;
+    grid-row: span 2;
+    padding: 0;
+    overflow: hidden;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.crime-statistics-card {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.safety-index-card {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.crime-time-card {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.helpline-card {
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: #6a5acd;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.helpline-icon {
+    font-size: 3rem;
+    margin-right: 20px;
+}
+
+.helpline-content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.helpline-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    color: #4a4a6a;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #fff;
+    color: #333;
+    margin-top: 20px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sos-card, .map-card, .crime-statistics-card, .safety-index-card, .crime-time-card, .helpline-card {
+        grid-column: span 1;
+        grid-row: auto;
+    }
+
+    .helpline-card {
+        flex-direction: column;
+    }
+
+    .helpline-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

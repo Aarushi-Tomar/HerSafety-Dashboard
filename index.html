@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Safety Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Women Safety Dashboard</h1>
+    </header>
+    <main>
+        <section class="dashboard">
+            <div class="dashboard-grid">
+                <div class="card sos-card">
+                    <div class="sos-icon">SOS</div>
+                    <div class="sos-content">
+                        <h3>Live SOS</h3>
+                        <div class="sos-active">5 ACTIVE</div>
+                    </div>
+                </div>
+                <div class="card map-card">
+                    <div id="map" style="height: 100%; width: 100%;"></div>
+                </div>
+                <div class="card crime-statistics-card">
+                    <h3>Crime Statistics</h3>
+                    <canvas id="crimeStatisticsChart"></canvas>
+                </div>
+                <div class="card safety-index-card">
+                    <h3>Safety Index by City</h3>
+                    <canvas id="safetyIndexChart"></canvas>
+                </div>
+                <div class="card crime-time-card">
+                    <h3>Crime by Time of Day</h3>
+                    <canvas id="crimeTimeChart"></canvas>
+                </div>
+                <div class="card helpline-card">
+                    <div class="helpline-icon">📞</div>
+                    <div class="helpline-content">
+                        <h3>WOMEN HELPLINE</h3>
+                        <div class="helpline-number">1091</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Women Safety Dashboard</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
